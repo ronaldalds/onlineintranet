@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include 'partials/head.html' %}
+    <title> {% block title %}{% endblock title %} Operações</title>
+</head>
+<body>
+    <div class="d-flex p-2 justify-content-center bg-secondary">
+        <div class="d-flex align-items-center">
+            <a class="text-white text-decoration-none fs-2 text-center" href="{% url 'home' %}">
+                <i class="fa-solid fa-house"></i><h2>OnlineTelecom Operações</h2>
+            </a>
+        </div>
+
+    </div>
+    {% block content %}{% endblock content %}
+</body>
+</html>
