@@ -3,13 +3,13 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def home(request):
-
-    contexto = {
-        'setor': 'Compartilhamento',
-    }
-    return render(request, 'pages/home.html', context=contexto)
+def compartilhamento(request):
+    return render(request, 'projeto-rede-compartilhamento.html')
 
 
 def conversor(request):
-    return render(request, 'pages/utils.html')
+    pass
+
+
+def poste(request):
+    pass

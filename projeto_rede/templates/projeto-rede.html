@@ -1,0 +1,24 @@
+{% extends 'global/base.html' %}
+{% block content %}
+<title>{% block title %}Home | {% endblock title %}{{setor}}</title>
+<div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+        <div class="modal-header d-flex justify-content-center">
+            
+            <h2 class="modal-title text-center">Projetos de Rede</h2>
+        </div>
+        <div class="modal-body">
+            <div class="form-label d-grid">
+                <a class="btn btn-primary btn-lg rounded-pill" href="{% url 'projeto-rede-informacoes' %}">
+                    <i class="fa-solid fa-magnifying-glass"></i> Informações
+                </a>
+            </div>
+            <div class="form-label d-grid">
+                <a class="btn btn-primary btn-lg rounded-pill" href="{% url 'projeto-rede-compartilhamento' %}">
+                    <i class="fa-solid fa-magnifying-glass"></i> Compartilhamento
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
