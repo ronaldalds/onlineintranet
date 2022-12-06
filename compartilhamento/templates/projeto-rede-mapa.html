@@ -1,0 +1,17 @@
+{% extends 'global/base.html' %}
+{% block content %}
+<title>{% block title %}Mapa | {% endblock title %}</title>
+
+<div class="modal-dialog modal-xl" >
+  <div class="modal-content">
+
+    <div class="modal-header d-flex justify-content-center">
+        <h2 class="modal-title text-center">Mapa</h2>
+    </div>
+
+    <div class="container text-center" style="height: 100%; width: 100%;">{{ mapa }}</div>
+
+  </div>
+
+</div>
+{% endblock content %}
