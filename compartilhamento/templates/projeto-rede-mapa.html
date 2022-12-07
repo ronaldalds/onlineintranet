@@ -1,7 +1,24 @@
 {% extends 'global/base.html' %}
 {% block content %}
 <title>{% block title %}Mapa | {% endblock title %}</title>
+<style>
+    .col-1{
+        width: 66px;
+    }
 
-{% include 'partials/map.html' %}
+</style>
+<div class="bg-secondary" style="height: 90%; ">
 
+    <div class="row m-0" style="height: 100%;">
+        <div class="col-1 text-white p-0">
+            <div class="d-flex col-1 mb-2 mt-2 justify-content-center">
+                <i class="fa-solid fa-house fs-1"></i>
+            </div>
+        </div>
+        <div class="col p-0">
+            {% include 'partials/map.html' %}
+        </div>
+        
+    </div>
+</div>
 {% endblock content %}

@@ -88,7 +88,8 @@ class Imagem(models.Model):
 
 
 class Ponto(models.Model):
-    tipo = models.ForeignKey(Tipo, on_delete=models.CASCADE)
+    tipo = models.ForeignKey(
+        Tipo, on_delete=models.CASCADE, related_name='nome_tipo')
     nome = models.CharField(max_length=128, blank=True, null=True)
     descricao = models.TextField(blank=True)
     altura = models.IntegerField(blank=True, null=True)
