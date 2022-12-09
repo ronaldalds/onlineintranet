@@ -1,9 +1,7 @@
-import io
+
 import os
 
-import branca
 import folium
-from branca.element import Element, Figure
 from django.conf import settings
 from django.shortcuts import render
 from folium.plugins import BeautifyIcon, Draw, MiniMap
@@ -103,6 +101,9 @@ def mapa(request):
     ).add_to(linhas)
     pontos.add_to(m)
     linhas.add_to(m)
+    Draw(
+        export=True
+    ).add_to(m)
     MiniMap(position='bottomleft').add_to(m)
     folium.LayerControl().add_to(m)
     m.save(os.path.join(
