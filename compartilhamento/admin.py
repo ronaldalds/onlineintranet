@@ -15,6 +15,11 @@ class TipoAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(models.Rota)
+class FtthAdmin(admin.ModelAdmin):
+    pass
+
+
 @admin.register(models.Rede)
 class RedeAdmin(admin.ModelAdmin):
     pass
@@ -42,16 +47,6 @@ class ImagemAdmin(admin.ModelAdmin):
 
 @admin.register(models.Ponto)
 class PontoAdmin(admin.ModelAdmin):
-    pass
-
-
-@admin.register(models.Ligacao)
-class LigacaoAdmin(admin.ModelAdmin):
-    pass
-
-
-@admin.register(models.Trajeto)
-class TrajetoAdmin(admin.ModelAdmin):
     pass
 
 

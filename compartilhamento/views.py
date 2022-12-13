@@ -1,18 +1,24 @@
 
 import os
+import xml.etree.ElementTree as ET
 
 import folium
+import pandas as pd
 from django.conf import settings
 from django.shortcuts import render
-from folium.plugins import BeautifyIcon, Draw, MiniMap
+from folium.plugins import BeautifyIcon, Draw, HeatMap, MiniMap
 
-from . import models
+from .models import Tipo
+from .utils import LayerFactory
+
 
 # Create your views here.
-
-
 def compartilhamento(request):
     return render(request, 'projeto-rede-compartilhamento.html')
+
+
+def manutencao(request):
+    return render(request, 'partials/manutencao.html')
 
 
 def descricao(request):
@@ -22,88 +28,104 @@ def descricao(request):
     return render(request, template_name='descricao-form.html', context=cont)
 
 
-def mapa(request):
-    queryPolyline = models.Trajeto.objects.all()
-    queryPop = models.Ponto.objects.filter(tipo__nome__icontains="POP")
-    queryPosteEnel = models.Ponto.objects.filter(
-        tipo__nome__icontains="POSTE ENEL")
+def maps(request):
+
+    # file = 'static/poste.kml'
+    # site = '{http://www.opengis.net/kml/2.2}'
+    # doc = ET.parse(file)
+    # root = doc.getroot()
+    # pop = Tipo.objects.get(id=1)
+    # ponto = Tipo.objects.get(id=2)
+
+    # for i in root.iter(f'{site}Placemark'):
+    #     for t in i.iter(f'{site}Point'):
+    #         coord = t.findtext(f'{site}coordinates').split(',')
+    #         tipo = ponto
+    #         user = request.user
+    #         poste = Ponto()
+    #         poste.usuario = user
+    #         poste.tipo = tipo
+    #         poste.latitude = float(coord[1])
+    #         poste.longitude = float(coord[0])
+    #         poste.save()
+    # queryPolyline = Trajeto.objects.all()
+
+    # queryPop = Ponto.objects.filter(tipo__nome__icontains="POP")
+    # queryPosteEnel = Ponto.objects.filter(tipo__nome__icontains="POSTE ENEL")
+    # queryPosteEnel = ponto.tipo_ponto.all()
+
     base = (-5.176168, -40.680138)
-    pontos = folium.FeatureGroup('Pontos',)
-    linhas = folium.FeatureGroup('Linhas',)
-    # metro = folium.FeatureGroup('Metro')
-    # poste = folium.FeatureGroup('Poste')
-    # bkb = folium.FeatureGroup('BkB')
-    # bkh = folium.FeatureGroup('BkH')
-    # varjota = folium.FeatureGroup('Varjota')
+    pop = folium.FeatureGroup('PoP',)
+    bkb = folium.FeatureGroup('BkB',)
 
     m = folium.Map(
         width='100%', height='100%',
         location=base,
-        zoom_start=18,
+        zoom_start=10,
         tiles=None,
     )
+    db = pd.read_csv("static/manutencao.csv")
+    coordenadas = []
 
-    folium.raster_layers.TileLayer(
-        tiles='http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
-        attr='google',
-        name='Google Satélite',
-        max_zoom=20,
-        subdomains=['mt0', 'mt1', 'mt2', 'mt3'],
-        overlay=False,
-        control=True,
-    ).add_to(m)
+    for lat, lng in zip(db.Latitude.values, db.Longitude.values):
+        coordenadas.append([lat, lng])
 
-    folium.raster_layers.TileLayer(
-        tiles='http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
-        attr='google',
-        name='Google Maps',
-        max_zoom=20,
-        subdomains=['mt0', 'mt1', 'mt2', 'mt3'],
-        overlay=False,
-        control=True,
-    ).add_to(m)
+    file = 'static/Estacoes.kml'
+    site = '{http://www.opengis.net/kml/2.2}'
+    doc = ET.parse(file)
+    root = doc.getroot()
+    for i in root.iter(f'{site}Placemark'):
+        nomePop = i.findtext(f'{site}name')
+        for t in i.iter(f'{site}Point'):
+            coord = t.findtext(f'{site}coordinates').split(',')
+            folium.Marker(
+                (float(coord[1]), float(coord[0])),
+                popup=nomePop,
+                tooltip=nomePop,
+                icon=folium.Icon(color="red", icon="home", prefix='fa'),
 
-    for i in queryPop:
-        folium.Marker(
-            (i.latitude, i.longitude),
-            popup=i.descricao,
-            tooltip=i.nome,
-            icon=folium.Icon(color="red", icon="home", prefix='fa'),
+            ).add_to(pop)
 
-        ).add_to(pontos)
+    file = 'static/Fibras.kml'
+    site = '{http://www.opengis.net/kml/2.2}'
+    doc = ET.parse(file)
+    root = doc.getroot()
+    for i in root.iter(f'{site}Placemark'):
+        nome = i.findtext(f'{site}name')
+        cabo = []
+        for t in i.iter(f'{site}LineString'):
+            coord = t.findtext(f'{site}coordinates').split()
+            for cod in coord:
+                latLng = cod.split(',')
+                cabo.append([float(latLng[1]), float(latLng[0])])
 
-    for i in queryPosteEnel:
-        folium.Marker(
-            (i.latitude, i.longitude),
-            popup=i.descricao,
-            tooltip=i.nome,
-            icon=BeautifyIcon(
-                icon_shape='rectangle-dot',
-                border_width=5,
-            ),
+        folium.PolyLine(cabo, popup=nome,
+                        tooltip=nome,
+                        color="cyan",
+                        weight=2,
+                        # dash_array='5,15',
+                        ).add_to(bkb)
 
-        ).add_to(pontos)
-    cabos = []
-    for i in queryPolyline:
-        for t in i.ligacao.all():
-            cabos.append([
-                (t.ponto_a.latitude, t.ponto_a.longitude),
-                (t.ponto_b.latitude, t.ponto_b.longitude)
-            ])
+    # for i in queryPosteEnel:
+    #     folium.Marker(
+    #         (i.latitude, i.longitude),
+    #         popup=i.descricao,
+    #         tooltip=i.nome,
+    #         icon=BeautifyIcon(
+    #             icon_shape='rectangle-dot',
+    #             border_color='#0000FF',
+    #             border_width=5,
+    #         ),
 
-    folium.PolyLine(
-        cabos,
-        popup=folium.Html('<a href="#">asdf</a>'),
-        tooltip=i.nome,
-        color="cyan",
-        weight=6,
-        dash_array='5,15',
-    ).add_to(linhas)
-    pontos.add_to(m)
-    linhas.add_to(m)
-    Draw(
-        export=True
-    ).add_to(m)
+    #     ).add_to(m)
+    m.add_child(HeatMap(coordenadas, radius=20, name='Manutenção BKB'))
+    pop.add_to(m)
+    bkb.add_to(m)
+
+    Draw().add_to(m)
+    satelite = LayerFactory()
+    satelite.get_layer_google_satelite().gerar_layer(m)
+    satelite.get_layer_google_maps().gerar_layer(m)
     MiniMap(position='bottomleft').add_to(m)
     folium.LayerControl().add_to(m)
     m.save(os.path.join(

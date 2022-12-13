@@ -2,8 +2,12 @@ from django.urls import path
 
 from . import views
 
+# app_name = 'compartilhamento'
+
 urlpatterns = [
-    path('', views.compartilhamento, name='projeto-rede-compartilhamento'),
+    path('uteis/', views.compartilhamento,
+         name='projeto-rede-compartilhamento'),
     path('descricao/', views.descricao, name='descricao-form'),
-    path('mapa/', views.mapa, name='projeto-rede-mapa'),
+    path('mapa/', views.maps, name='projeto-rede-mapa'),
+    path('manutencao/', views.manutencao, name='manutencao'),
 ]

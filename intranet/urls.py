@@ -24,6 +24,7 @@ urlpatterns = [
     path('projeto-rede/', include('projeto_rede.urls')),
     path('projeto-rede/compartilhamento/', include('compartilhamento.urls')),
     path('projeto-rede/informacoes/', include('informacoes.urls')),
+    path('projeto-rede/maps/', include('maps.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

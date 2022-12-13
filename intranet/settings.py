@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-afx-qoe7qvxw(3r7!v49fiavjsv^jp@55-(3fvvy)86etvpoja
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.16.11.111',]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'projeto_rede',
     'informacoes',
     'compartilhamento',
+    'maps',
 ]
 
 MIDDLEWARE = [

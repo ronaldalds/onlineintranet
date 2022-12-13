@@ -24,6 +24,17 @@ class Tipo(models.Model):
         return self.nome
 
 
+class Rota(models.Model):
+    nome = models.CharField(max_length=64)
+    descricao = models.TextField(blank=True)
+    usuario = models.ForeignKey(User, on_delete=models.PROTECT)
+    created_data = models.DateTimeField(auto_now_add=True,)
+    updated_data = models.DateTimeField(auto_now=True)
+
+    def __str__(self) -> str:
+        return self.nome
+
+
 class Rede(models.Model):
     nome = models.CharField(max_length=64)
     descricao = models.TextField(blank=True)
@@ -65,6 +76,7 @@ class Cabo(models.Model):
     descricao = models.TextField(blank=True)
     n_fibra = models.IntegerField()
     as_fibra = models.IntegerField()
+    color = models.CharField(max_length=8)
     empresa = models.ForeignKey(Empresa, on_delete=models.SET_NULL, null=True)
     usuario = models.ForeignKey(User, on_delete=models.PROTECT)
     created_data = models.DateTimeField(auto_now_add=True)
@@ -89,7 +101,7 @@ class Imagem(models.Model):
 
 class Ponto(models.Model):
     tipo = models.ForeignKey(
-        Tipo, on_delete=models.CASCADE, related_name='nome_tipo')
+        Tipo, on_delete=models.CASCADE, related_name='tipo_ponto')
     nome = models.CharField(max_length=128, blank=True, null=True)
     descricao = models.TextField(blank=True)
     altura = models.IntegerField(blank=True, null=True)
@@ -119,28 +131,3 @@ class Ponto(models.Model):
         if self.nome:
             return self.nome
         return f'{self.id}'
-
-
-class Ligacao(models.Model):
-    cabo = models.ForeignKey(Cabo, on_delete=models.SET_NULL, null=True)
-    ponto_a = models.ForeignKey(
-        Ponto, on_delete=models.PROTECT, null=True, related_name='ponto_a_ligacao')
-    ponto_b = models.ForeignKey(
-        Ponto, on_delete=models.PROTECT, null=True, related_name='ponto_b_ligacao')
-    usuario = models.ForeignKey(User, on_delete=models.PROTECT)
-    created_data = models.DateTimeField(auto_now_add=True)
-    updated_data = models.DateTimeField(auto_now=True)
-
-    def __str__(self) -> str:
-        return f'{self.ponto_a} <-> {self.ponto_b} <-> Cabo {self.cabo}'
-
-
-class Trajeto(models.Model):
-    nome = models.CharField(max_length=64)
-    ligacao = models.ManyToManyField(Ligacao)
-    usuario = models.ForeignKey(User, on_delete=models.PROTECT)
-    created_data = models.DateTimeField(auto_now_add=True)
-    updated_data = models.DateTimeField(auto_now=True)
-
-    def __str__(self) -> str:
-        return self.nome

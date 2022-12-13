@@ -1,0 +1,1949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>poste.kml</name>
+	<Style id="icon-503-BCA92000">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="icon-503-BCA92011">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="icon-503-BCA9206">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#icon-503-BCA92011</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#icon-503-BCA92000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_square5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_square_highlight">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight0">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight00">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight1">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight2">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight3">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight4">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square0">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square1">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square2">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square20">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square3">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_placemark_square4">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+	</Style>
+	<Folder>
+		<name>Postes</name>
+		<open>1</open>
+		<Placemark>
+			<name>Waypoint 1</name>
+			<TimeStamp><when>2017-07-19T16:45:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 12/300</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32846965,-4.19499107,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 2</name>
+			<TimeStamp><when>2017-07-19T16:48:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10,5/600</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32814812,-4.1959845,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 4</name>
+			<TimeStamp><when>2017-07-19T16:52:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10,5/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32702427,-4.19632824,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 6</name>
+			<TimeStamp><when>2017-07-19T16:55:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10,5/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32603085,-4.19651349,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 8</name>
+			<TimeStamp><when>2017-07-19T16:55:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 12/600</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32543473,-4.1966984,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 10</name>
+			<TimeStamp><when>2017-07-20T07:39:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>9/300 C 7</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32169774,-4.19442697,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 11</name>
+			<TimeStamp><when>2017-07-20T07:40:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32137454,-4.19425778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 13</name>
+			<TimeStamp><when>2017-07-20T07:40:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32106172,-4.19409259,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 15</name>
+			<TimeStamp><when>2017-07-20T07:41:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>Pe 10/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32073226562563,-4.193927533137238,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 15</name>
+			<TimeStamp><when>2017-07-20T07:41:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>Pe 10/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32077217120414,-4.19383895063747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 17</name>
+			<TimeStamp><when>2017-07-20T07:44:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10,5/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32063726,-4.19408992,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 19</name>
+			<TimeStamp><when>2017-07-20T07:44:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10,5/150 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32053199,-4.19433268,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 21</name>
+			<TimeStamp><when>2017-07-20T07:46:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3203164,-4.19366727,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 23</name>
+			<TimeStamp><when>2017-07-20T07:47:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 8</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32004617,-4.19353385,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 25</name>
+			<TimeStamp><when>2017-07-20T07:49:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square4</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>Pe 9/300 C 9</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31970205753406,-4.19336897513893,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 27</name>
+			<TimeStamp><when>2017-07-20T07:51:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31941149,-4.19349305,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 29</name>
+			<TimeStamp><when>2017-07-20T07:52:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31917613,-4.19356662,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 31</name>
+			<TimeStamp><when>2017-07-20T07:53:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31897362,-4.19367094,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 33</name>
+			<TimeStamp><when>2017-07-20T07:54:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31865176,-4.19384281,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 35</name>
+			<TimeStamp><when>2017-07-20T07:55:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31902224,-4.19402773,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 37</name>
+			<TimeStamp><when>2017-07-20T07:56:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31907119,-4.19440524,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 39</name>
+			<TimeStamp><when>2017-07-20T07:57:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31912684,-4.19470484,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 41</name>
+			<TimeStamp><when>2017-07-20T07:58:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31917144,-4.19503955,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 43</name>
+			<TimeStamp><when>2017-07-20T07:59:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31913489,-4.19554981,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 45</name>
+			<TimeStamp><when>2017-07-20T08:03:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31959221,-4.19318141,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 47</name>
+			<TimeStamp><when>2017-07-20T08:04:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31947285,-4.19290488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 49</name>
+			<TimeStamp><when>2017-07-20T08:05:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31934209,-4.19254007,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 51</name>
+			<TimeStamp><when>2017-07-20T08:06:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31902693,-4.19266079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 53</name>
+			<TimeStamp><when>2017-07-20T08:07:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>Pe 9/300 C 6</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31917915,-4.19216356,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 55</name>
+			<TimeStamp><when>2017-07-20T08:08:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3189116,-4.19219566,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 57</name>
+			<TimeStamp><when>2017-07-20T08:11:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square1</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 8</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32007473377713,-4.193207365249891,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 59</name>
+			<TimeStamp><when>2017-07-20T08:17:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square1</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 6</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32039747612507,-4.193072448070853,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 61</name>
+			<TimeStamp><when>2017-07-20T08:18:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square2</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 11/300 C 4 (BC 3585)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32070930297757,-4.192911212577759,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 63</name>
+			<TimeStamp><when>2017-07-20T08:20:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square5</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32105412652841,-4.192770000590982,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 65</name>
+			<TimeStamp><when>2017-07-20T08:22:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32071538,-4.19259358,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 67</name>
+			<TimeStamp><when>2017-07-20T08:23:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>Pe 9/150 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32052964,-4.19248122,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 69</name>
+			<TimeStamp><when>2017-07-20T08:25:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 7</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32015614,-4.19230902,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 71</name>
+			<TimeStamp><when>2017-07-20T08:26:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31981617,-4.1921542,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 73</name>
+			<TimeStamp><when>2017-07-20T08:27:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31967904,-4.19209234,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 75</name>
+			<TimeStamp><when>2017-07-20T08:28:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31971224,-4.19186764,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 77</name>
+			<TimeStamp><when>2017-07-20T08:29:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31991575,-4.19149781,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 79</name>
+			<TimeStamp><when>2017-07-20T08:31:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 9</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32029327,-4.19196327,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 81</name>
+			<TimeStamp><when>2017-07-20T08:33:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P  9/150 C 12</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32045186,-4.19163224,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 83</name>
+			<TimeStamp><when>2017-07-20T08:35:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32062989,-4.19129852,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 85</name>
+			<TimeStamp><when>2017-07-20T08:35:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32051522,-4.19128147,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 87</name>
+			<TimeStamp><when>2017-07-20T08:36:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32030333,-4.19121225,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 89</name>
+			<TimeStamp><when>2017-07-20T08:41:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32137722,-4.19259826,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 91</name>
+			<TimeStamp><when>2017-07-20T08:42:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32156028,-4.19232975,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 93</name>
+			<TimeStamp><when>2017-07-20T08:44:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 8</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32135308,-4.19223746,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 95</name>
+			<TimeStamp><when>2017-07-20T08:45:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32104194,-4.19210939,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 97</name>
+			<TimeStamp><when>2017-07-20T08:46:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 6</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32075427,-4.191984,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 99</name>
+			<TimeStamp><when>2017-07-20T08:48:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32061715,-4.19230634,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 101</name>
+			<TimeStamp><when>2017-07-20T08:49:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32117203,-4.19177435,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 103</name>
+			<TimeStamp><when>2017-07-20T08:50:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32093365,-4.19160482,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 105</name>
+			<TimeStamp><when>2017-07-20T08:52:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 6</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32149222,-4.19188536,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 108</name>
+			<TimeStamp><when>2017-07-20T08:53:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32175038,-4.19201744,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 110</name>
+			<TimeStamp><when>2017-07-20T08:54:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 5 (BF 5049)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3218969,-4.19161585,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 112</name>
+			<TimeStamp><when>2017-07-20T08:56:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32203168,-4.19126341,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 114</name>
+			<TimeStamp><when>2017-07-20T08:58:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32167897,-4.19111027,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 116</name>
+			<TimeStamp><when>2017-07-20T08:59:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3214037,-4.19099491,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 118</name>
+			<TimeStamp><when>2017-07-20T09:00:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32117706,-4.19090563,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 120</name>
+			<TimeStamp><when>2017-07-20T09:00:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 11/300 C 1 (BH 9456)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32084715,-4.19075181,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 122</name>
+			<TimeStamp><when>2017-07-20T09:02:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32072846,-4.19099758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 124</name>
+			<TimeStamp><when>2017-07-20T09:03:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32053601,-4.19062943,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 126</name>
+			<TimeStamp><when>2017-07-20T09:04:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/150 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32018699,-4.19046726,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 128</name>
+			<TimeStamp><when>2017-07-20T09:04:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31988055,-4.1903412,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 130</name>
+			<TimeStamp><when>2017-07-20T09:07:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31953085,-4.19021213,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 132</name>
+			<TimeStamp><when>2017-07-20T09:08:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 (BH 8698)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3192633,-4.18999812,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 134</name>
+			<TimeStamp><when>2017-07-20T09:13:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32101478,-4.19045589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 136</name>
+			<TimeStamp><when>2017-07-20T09:14:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32115191,-4.19008071,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 138</name>
+			<TimeStamp><when>2017-07-20T09:15:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3207013,-4.18990115,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 140</name>
+			<TimeStamp><when>2017-07-20T09:15:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32038145,-4.18977041,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 142</name>
+			<TimeStamp><when>2017-07-20T09:16:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32002639,-4.18964301,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 144</name>
+			<TimeStamp><when>2017-07-20T09:17:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31961065,-4.18945074,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 146</name>
+			<TimeStamp><when>2017-07-20T09:17:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31921938,-4.18933471,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 148</name>
+			<TimeStamp><when>2017-07-20T09:19:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32149859,-4.19021012,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 150</name>
+			<TimeStamp><when>2017-07-20T09:20:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32178827,-4.19033116,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 152</name>
+			<TimeStamp><when>2017-07-20T09:21:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square0</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32135787336669,-4.190548440364691,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 154</name>
+			<TimeStamp><when>2017-07-20T09:24:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 7</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.3221735,-4.19090463,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 156</name>
+			<TimeStamp><when>2017-07-20T09:24:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32233309,-4.19054851,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 158</name>
+			<TimeStamp><when>2017-07-20T09:26:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32273207,-4.19067457,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 160</name>
+			<TimeStamp><when>2017-07-20T09:26:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32307371,-4.19082337,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 162</name>
+			<TimeStamp><when>2017-07-20T09:27:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32342274,-4.19098254,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 164</name>
+			<TimeStamp><when>2017-07-20T09:27:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32363228,-4.19109221,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 166</name>
+			<TimeStamp><when>2017-07-20T09:33:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32383714,-4.19118718,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 168</name>
+			<TimeStamp><when>2017-07-20T09:33:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/150 C 2</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32247491,-4.19025426,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 170</name>
+			<TimeStamp><when>2017-07-20T09:35:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/150 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32264054,-4.18988577,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 172</name>
+			<TimeStamp><when>2017-07-20T09:37:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32278068,-4.18956911,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 174</name>
+			<TimeStamp><when>2017-07-20T09:37:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 2 (BH 8353)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32293256,-4.18925446,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 176</name>
+			<TimeStamp><when>2017-07-20T09:43:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32235958,-4.19141656,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 178</name>
+			<TimeStamp><when>2017-07-20T09:44:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32269284,-4.19154764,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 180</name>
+			<TimeStamp><when>2017-07-20T09:52:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31981081,-4.19270793,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 182</name>
+			<TimeStamp><when>2017-07-20T09:53:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 4</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.31985976,-4.19231638,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 184</name>
+			<TimeStamp><when>2017-07-20T10:00:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/150 C 6</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32091051,-4.19356093,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 186</name>
+			<TimeStamp><when>2017-07-20T10:02:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/150 C 5</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32104865,-4.1932299,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 188</name>
+			<TimeStamp><when>2017-07-20T10:03:00Z</when>
+</TimeStamp>
+			<styleUrl>#msn_placemark_square3</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 10/300 C 3</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32120056255254,-4.192955904214849,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 191</name>
+			<TimeStamp><when>2017-07-20T11:51:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300 C 1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32075394,-4.19682847,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 192</name>
+			<TimeStamp><when>2017-07-20T11:53:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 9/300</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32044984,-4.19684118,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waypoint 194</name>
+			<TimeStamp><when>2017-07-20T11:53:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BCA9206</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="notes">
+					<value>P 12/600</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-40.32005925,-4.19660946,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
